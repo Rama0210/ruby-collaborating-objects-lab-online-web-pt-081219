@@ -21,7 +21,7 @@ def artist_name=(artist_name)
 end
 
 def self.new_by_filename(filename)
-    # artist - title - genre.mp3
+    artist - title - genre.mp3
     artist = filename.split(" - ")[0]
     track = filename.split(" - ")[1]
     song = Song.new(track)
