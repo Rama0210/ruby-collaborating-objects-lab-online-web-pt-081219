@@ -18,6 +18,7 @@ end
   
   def self.find_or_create_by_name(name)
     result = Artist.all.find do |artist|
+      artist.name == name
   
 end
 
