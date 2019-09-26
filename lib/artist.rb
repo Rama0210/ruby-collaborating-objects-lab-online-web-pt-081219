@@ -20,6 +20,15 @@ end
     result = Artist.all.find do |artist|
       artist.name == name
     end
-  
+  if !result
+      result = Artist.new(name)
+    end
+
+    result
+  end
+
+  def print_songs
+    puts self.songs.map { |song| song.name }
+  end
 end
 
