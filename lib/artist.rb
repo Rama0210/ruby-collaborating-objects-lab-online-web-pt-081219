@@ -6,9 +6,8 @@ class Artist
     @name = name
   end
   
-  def artist
-    Artist.all.select do |artist|
-  end
+  def self.all
+    @@all
 end
   
 end
